@@ -34,4 +34,6 @@ app.get("/tallyLight/firmware/version.txt", (request, response) => {
 	}
 });
 
-app.listen(PORT, "192.168.100.222");
+app.listen(PORT, "192.168.100.222", () => {
+	console.log("serving on: http://api.dominikkawalec.pl:3000/tallyLight/firmware/version.txt");
+});
