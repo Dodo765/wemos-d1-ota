@@ -54,6 +54,6 @@ app.get("/datavideo/firmware/version", (request, response) => {
 	}
 });
 
-app.listen(PORT, "192.168.100.222", () => {
+app.listen(PORT, "0.0.0.0", () => {
 	console.log("serving on: http://api.dominikkawalec.pl:3000/datavideo/firmware/version");
 });
