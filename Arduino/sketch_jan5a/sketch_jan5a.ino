@@ -16,8 +16,8 @@
 ESP8266WiFiMulti WiFiMulti;
  
 float firmware_version = 0.21;
-#define VERSION_CHECK_URL "http://192.168.100.222:3000/firmware/version.txt"
-#define FIRMWARE_URL "192.168.100.222", 3000, "/firmware/httpUpdateNew.bin"
+#define VERSION_CHECK_URL "http://10.0.0.100:39000/tallyLight/firmware/version"
+#define FIRMWARE_URL "10.0.0.100", 39000, "/tallyLight/firmware/firmware.bin"
  
 void update_started() {
   Serial.println("CALLBACK:  HTTP update process started");
